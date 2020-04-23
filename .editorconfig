@@ -1,0 +1,16 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+insert_final_newline = true
+rulers = 80, 120
+trim_trailing_whitespace = true
+
+[*.code-workspace]
+indent_style = tab
+insert_final_newline = false
+
+[*.md]
+max_line_length = 120
