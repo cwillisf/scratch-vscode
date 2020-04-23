@@ -1,0 +1,91 @@
+{
+	"launch": {
+		"configurations": [
+			{
+				"name": "www client",
+				"type": "chrome",
+				"request": "launch",
+				"url": "http://localhost:8333",
+				"webRoot": "${workspaceFolder:scratch-www}",
+				"disableNetworkCache": true,
+				"showAsyncStacks": true,
+				"sourceMaps": true,
+				"smartStep": true
+			},
+			{
+				"name": "www server",
+				"type": "node",
+				"request": "launch",
+				"cwd": "${workspaceFolder:scratch-www}",
+				"program": "${workspaceFolder:scratch-www}/dev-server/index.js",
+				"autoAttachChildProcesses": true,
+				"console": "internalConsole",
+				"outputCapture": "std"
+			}
+		],
+		"compounds": [
+			{
+				"name": "www",
+				"configurations": [
+					"www server",
+					"www client"
+				]
+			}
+		]
+	},
+	"settings": {},
+	"folders": [
+		{
+			"name": "scratch-www",
+			"path": "../scratch-www"
+		},
+		{
+			"name": "eslint-config-scratch",
+			"path": "../eslint-config-scratch"
+		},
+		{
+			"name": "paper.js",
+			"path": "../paper.js"
+		},
+		{
+			"name": "scratch-audio",
+			"path": "../scratch-audio"
+		},
+		{
+			"name": "scratch-blocks",
+			"path": "../scratch-blocks"
+		},
+		{
+			"name": "scratch-gui",
+			"path": "../scratch-gui"
+		},
+		{
+			"name": "scratch-l10n",
+			"path": "../scratch-l10n"
+		},
+		{
+			"name": "scratch-paint",
+			"path": "../scratch-paint"
+		},
+		{
+			"name": "scratch-render",
+			"path": "../scratch-render"
+		},
+		{
+			"name": "scratch-render-fonts",
+			"path": "../scratch-render-fonts"
+		},
+		{
+			"name": "scratch-storage",
+			"path": "../scratch-storage"
+		},
+		{
+			"name": "scratch-svg-renderer",
+			"path": "../scratch-svg-renderer"
+		},
+		{
+			"name": "scratch-vm",
+			"path": "../scratch-vm"
+		}
+	]
+}

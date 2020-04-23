@@ -35,3 +35,44 @@ This workspace is for working on the `scratch-vscode` repository itself, includi
 Contents:
 
 - scratch-vscode
+
+### Workspace `scratch-www`
+
+This workspace is for working on the Scratch web site, including the Scratch editor. This is sort of the "everything"
+workspace for Scratch work, though it excludes `scratch-desktop` and `scratch-link`.
+
+Contents:
+
+- scratch-www
+- eslint-config-scratch
+- paper.js
+  - This is expected to be the LLK fork or a derivative
+- scratch-audio
+- scratch-blocks
+- scratch-gui
+- scratch-l10n
+- scratch-paint
+- scratch-render
+- scratch-render-fonts
+- scratch-storage
+- scratch-svg-renderer
+- scratch-vm
+
+## Repositories
+
+This is the list of repositories currently covered by these workspaces:
+
+- eslint-config-scratch
+- paper.js
+- scratch-audio
+- scratch-blocks
+- scratch-gui
+- scratch-l10n
+- scratch-paint
+- scratch-render
+- scratch-render-fonts
+- scratch-storage
+- scratch-svg-renderer
+- scratch-vm
+- scratch-vscode
+- scratch-www
